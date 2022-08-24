@@ -20,14 +20,20 @@ body{
 }
 a {
   text-decoration: none;
-  color: #e9eaf0;
+  color: #f0ece9;
   font-size: 24px;
   transition: all 0.6s;
   font-weight: 600;
 }
 
-a:active, a:focus, a:hover {
-  color: rgb(79, 116, 202);
+ a:focus, a:hover {
+  color: #d87ff3;
+}
+
+.active{
+  color: #d87ff3;
+  border-bottom: 2px solid #d87ff3;
+  padding:0px 0px 2px 0px;
 }
 
 .list > div {
@@ -152,3 +158,5 @@ body > tr > td:first-child {
   font-weight: 600;
   border-radius: 7px;
 }
+
+

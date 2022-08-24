@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const data = JSON.parse(localStorage.getItem("book-list")) || [];
 const tbody = document.getElementById("tbody");
 

@@ -1,13 +1,14 @@
+
 const data = JSON.parse(localStorage.getItem("buy-list")) || [];
 const tbody = document.getElementById("tbody");
 
 const deleteFunc = (id) => {
   data.forEach((item, index) => {
-    if(index === id) {
+    if (index === id) {
       data.splice(index, 1);
     }
     localStorage.setItem("buy-list", JSON.stringify(data));
-    mapData(data)
+    mapData(data);
   });
 };
 

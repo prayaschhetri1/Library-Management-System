@@ -1,3 +1,5 @@
+
+
 let form = document.getElementById("form");
 
 form.addEventListener("submit", handleFormSubmit);
@@ -13,5 +15,5 @@ function handleFormSubmit(e) {
   let formData = { bookName, author, bookDes, date, category, bookPrice };
   todoArr.push(formData);
   localStorage.setItem("book-list", JSON.stringify(todoArr));
-  window.location.href = "/dashboard.html"
+  window.location.href = "/dashboard.html";
 }
