@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/allStyles.css" />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/">HOME</a>
+        <a href="/dashboard.html">DASHBOARD</a>
+        <a href="/myBooks.html">MY BOOKS</a>
+        <a href="/bookmark.html">BOOKMARK</a>
+      </nav>
+
+      <center>
+        <form action="" id="form">
+          <h1>Library Management System</h1>
+          <input type="text" placeholder="Book Name" />
+          <input type="text" placeholder="Author Name" />
+          <input type="text" placeholder="Book Description" />
+          <div>
+            <label for="">Adding Date:-</label>
+            <input type="date" />
+          </div>
+          <select name="category" id="category" title="cat">
+            <option value="sports">sports</option>
+            <option value="fiction">fiction</option>
+            <option value="finance">finance</option>
+            <option value="Education">Education</option>
+          </select>
+
+          <input type="number" placeholder="Book's Price" />
+          <button type="submit">Submit</button>
+        </form>
+      </center>
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>

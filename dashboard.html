@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/allStyles.css" />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/">HOME</a>
+        <a href="/dashboard.html">DASHBOARD</a>
+        <a href="/myBooks.html">MY BOOKS</a>
+        <a href="/bookmark.html">BOOKMARK</a>
+      </nav>
+      <br />
+      <div id="total"></div>
+      <br />
+      <div class="filter-sort">
+        <select name="category" id="filter-category" title="cat">
+          <option value="all">Filter by Category</option>
+          <option value="sports">sports</option>
+          <option value="fiction">fiction</option>
+          <option value="finance">finance</option>
+          <option value="Education">Education</option>
+        </select>
+        <select name="" id="sort" title="sort">
+          <option value="all">Sort By Price</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to High</option>
+        </select>
+      </div>
+      <div class="list">
+        <h1 class="heading">DASHBOARD DATA</h1>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Description</th>
+              <th>Added Date</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Buy</th>
+              <th>bookmark</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- DOM Elements -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/dashboard.js"></script>
